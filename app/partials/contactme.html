@@ -10,10 +10,13 @@
                 <div class="row">
                     <div class="form-group">
                         <label>Full Name *</label><input name="total" ng-model="contactinfo.Name" class="form-control" ng-required placeholder="First Name Last Name">
-<label>Phone Number *</label><input number="total" ng-model="contactinfo.Number" class="form-control" ng-required placeholder="(000)-000-0000">
+                        <br><br>
+<label>Phone Number *</label><input number="total" ng-model="contactinfo.PhoneNumber" class="form-control" ng-required placeholder="(000)-000-0000"maxlength="16">
+<br><br>
 <label> Email *</label><input email="total" ng-model="contactinfo.Email"  class="form-control" ng-required placeholder="abc@gmail.com">
-                    <label> Good Time to Contact You *</label><input number="total" ng-model="contactinfo.Time"  class="form-control" ng-required placeholder="Time AM or PM, Date">
-                    </div>
+<br><br>
+                        <label> Good Time to Contact You *</label><input number="total" ng-model="contactinfo.Time"  class="form-control" ng-required placeholder="Time AM or PM" maxlength="8">
+                    <div>
                 </div>
             </div>
         </div>
